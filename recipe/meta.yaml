@@ -1,5 +1,6 @@
 {% set name = "optimagic" %}
 {% set version = "0.5.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,16 +17,16 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python >={{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
     - toml
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - cloudpickle
     - joblib
-    - numpy <2.0
+    - numpy <3.0
     - pandas
     - plotly
     - pybaum >=0.1.2
@@ -52,3 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - janosg
+    - timmens
