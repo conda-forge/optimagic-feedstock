@@ -1,5 +1,5 @@
 {% set name = "optimagic" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optimagic-{{ version }}.tar.gz
-  sha256: 0b14baab36ee3cb6bc86a37176993e1ad065c3e8026c5456a811e16c561ed0c8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/optimagic-{{ version }}.tar.gz
+  sha256: a8b8b8eb7be950fd1ffa08c77db695c24d9f9b4862d549dce08981287b541a3e
 
 build:
   noarch: python
